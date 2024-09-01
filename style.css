@@ -45,6 +45,7 @@ nav{
     height: 70px;
     width: 100%;
     background-color: var(--secondary-bg);
+    z-index: 90;
 }
 .logo{
     height: 70px;
