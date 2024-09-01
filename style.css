@@ -1,0 +1,341 @@
+:root{
+    --main-bg:#161616;
+    --secondary-bg:#1D1D1D;
+    --hover-color:#33A8E8;
+}
+*{
+    box-sizing: border-box;
+}
+html,body{
+    margin:0;
+    padding:0;
+}
+img{
+    display: block;
+}
+.bars{display: none;}
+.container
+{
+    width: 90%;
+    margin: auto;
+}
+.flex
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.light
+{
+    color:white
+}
+.muted
+{
+    color: #999999;
+}
+ul
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav{
+    position: fixed;
+    height: 70px;
+    width: 100%;
+    background-color: var(--secondary-bg);
+}
+.logo{
+    height: 70px;
+}
+.logo img{
+    height: 40%;
+}
+a,a:visited{
+    text-decoration: none;
+    color: white;
+}
+.navigations li,.icons li,.m-2{
+    margin-left: 20px;
+}
+i{
+    font-size: larger;
+}
+.fs-1{
+    font-size: 1.5rem;
+}
+header
+{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-image: linear-gradient(to right,rgba(0, 0, 0, 0.616),rgba(0, 0, 0, 0.301),rgba(0, 0, 0, 0.169)), url('./assets/hero.jpg');
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center center;
+    line-height: 40px;
+}
+h1{
+    font-size: 4.7rem;
+    font-weight: 400;
+    margin-block: 30px;
+}
+.fw-4
+{
+    font-weight: 400;
+}
+header .left{
+    width: 35%;
+}
+ button{
+    background-color: white;
+    color: var(--secondary-bg);
+    padding-inline:40px;
+    padding-block:20px;
+    font-size: 1.5rem;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.w-100{
+    width: 100%;
+}
+.w-50{
+    width: 50%;
+}
+.w-25{
+    width:20%;
+}
+.about-img{
+    background-image: url(./assets/square-2.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: scroll;
+}
+.about-img2{
+    background-image: url(./assets/square-1.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: scroll;
+}
+.about-left{
+    background-color: var(--main-bg);
+    min-height: 100vh;
+    padding: 65px 130px;
+    line-height: 30px;
+}
+p{
+    line-height: 30px;
+
+}
+.about-left h2{
+    font-size: 2rem;
+}
+.card{
+    padding:10px;
+    flex-direction: column;
+}
+.card-desc{
+    background-color: var(--secondary-bg);
+    width: 100%;
+    padding:10px 20px;
+}
+.card-desc .shop{
+    display: flex;
+    justify-content: space-between;
+}
+h3{
+    margin-block: 5px;
+}
+
+.sec-title
+{
+    text-align: center;
+
+}
+section.sellers
+{
+    padding-block: 40px;
+    background-color: var(--secondary-bg);
+    color: white;
+}
+section.services
+{
+    padding-block: 40px;
+    background-color: var(--main-bg);
+    color: white;
+}
+.sellers-list{
+    margin-block: 20px;
+}
+
+.bg-sec
+{
+    padding-block: 60px;
+    background-image: linear-gradient(to right,rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.5)), url("./assets/last.jpg");
+    background-position: center;
+    background-attachment: scroll;
+    background-size: cover;
+    text-align: center;
+}
+
+
+.foot{
+    background-color: var(--main-bg);
+    color: gray;
+    padding-block:50px;
+    font-size: larger;
+}
+.foot i{
+    color :gray;
+    margin-inline:10px
+}
+footer{
+    background-color: var(--secondary-bg);
+    padding-block: 60px;
+}
+
+ul.muted li{
+padding-block: 10px;
+border-bottom: solid 1px gray;
+
+}
+h6{
+    margin:5px;
+    color :#33A8E8
+}
+.about-img,.about-img2{
+    height: 100vh;
+}
+.services .sevices-card{
+    width: 33%;
+}
+button
+{
+    transition: background-color .5s,color .5s ;
+}
+.bg-sec button{
+    background-color: transparent;
+    color: white;
+    border: 2px solid;
+}
+.bg-sec button:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid white;
+}
+.foot ul.muted li{
+    border:none;
+}
+.about-above h3,.sellers h3{
+
+    font-weight: lighter;
+    margin-block: 1rem;
+
+}
+.card i,.card i{
+    margin-inline-end: .3125rem;
+}
+.card-img{
+    position: relative;
+    overflow: hidden;
+}
+.card-img::before{transition: all .5s;}
+.card-img::before{
+    content: "View Details";
+    font-size: larger;
+    background-color:#1D1D1D;
+    position: absolute;
+    bottom: -100%;
+    width: 100%;
+    text-align: center;
+    padding-block: .75rem;
+    border-bottom: #9999 solid 1px;
+    cursor: pointer;
+}
+.card-img:hover::before {
+    background-color: #33A8E8;
+}
+.card:hover .card-img::before{
+bottom: 0;
+}
+.card:hover .cart-ico{
+    top: 0;
+
+}
+.cart-ico:hover{
+    color: #33A8E8;
+}
+.shop
+{
+    position: relative;
+    overflow: hidden;
+}
+.cart-ico{
+    position: absolute;
+    top: -100%;
+    right: 0;
+    transition: all .5s;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: #1D1D1D;
+}
+
+header button:hover{
+    background-color: rgb(222, 222, 222);
+}
+@media screen and (max-width:1000px) {
+    .navigations{
+        display: none;
+    }
+    .bars{
+        display: block;
+    }
+    header .left{
+        width: 100%;
+    }
+    header{
+        font-weight: 100 !important;
+    }
+    header h1{
+        font-size: 4rem;
+    }
+
+   
+    .about-img,.about-img2
+    {
+        width: 100%;
+        height: 30vh;
+    }
+    .about-left{
+        width: 100%;
+        padding-inline:20px ;
+    }
+    section.sellers{
+        padding-inline: 20px;
+    }
+    .sellers p,.services p{
+        width: 100%;
+    }
+    .sellers-list .card
+    {
+        width: 50%;
+    }
+    .services .sevices-card{
+        width: 100%;
+    }
+    .footer-seg
+    {
+        width: 100%;
+        margin-block:20px;
+    }
+    .foot .container{
+        justify-content:center ;
+    }
+}
